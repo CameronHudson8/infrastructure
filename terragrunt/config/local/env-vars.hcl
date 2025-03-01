@@ -1,9 +1,11 @@
 locals {
   env_name                             = "local"
-  fluentd_version                      = "1.18"
+  fluentd_version                       = "1.18"
   grafana_helm_chart_version           = "8.11.3"
   ingress_nginx_helm_chart_version     = "4.12.0"
   ingress_nginx_service_type           = "NodePort"
+  kafka_storage_class_name             = "local"
+  kafka_version                        = "3.9.0"
   kube_prometheus_version              = "v0.14.0"
   kubectl_context_name                 = "local"
   kubernetes_version                   = "1.30"

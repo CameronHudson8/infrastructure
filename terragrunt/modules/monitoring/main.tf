@@ -59,6 +59,7 @@ data "external" "kube_prometheus_prepare_manifests" {
     "-c",
     # This script is based on the kube-prometheus installation docs.
     # https://github.com/prometheus-operator/kube-prometheus/blob/main/docs/customizing.md
+    # TODO Move overrides to a local variable.
     <<-EOF
       REPO='github.com/prometheus-operator/kube-prometheus'
       SUBDIR='jsonnet/kube-prometheus'
