@@ -1,4 +1,5 @@
 locals {
+  cloudnative_pg_operator_version      = "1.25.1"
   env_name                             = "local"
   fluentd_version                      = "1.18"
   grafana_helm_chart_version           = "8.11.3"
